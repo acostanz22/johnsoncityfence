@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 68" role="img" aria-label="Johnson's Fence Company">
+  <g fill="none" stroke="#f4f1ea" stroke-width="2.4" stroke-linecap="square">
+    <path d="M8 14v40M26 14v40M44 14v40"/>
+    <path d="M8 24h36M8 40h36" stroke="#e07a4c"/>
+  </g>
+  <text x="62" y="30" fill="#f4f1ea" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="1.4">JOHNSON'S</text>
+  <text x="62" y="52" fill="#e7d7cc" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" letter-spacing="2.8">FENCE COMPANY</text>
+</svg>
