@@ -48,6 +48,19 @@ PHONE_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-w
 MENU_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>'
 
 
+OFFICE_HOURS = "Free estimates in Johnson City and Washington County. Call or send the form any time."
+PHONE_ICON = (
+    '<svg class="phone-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
+    '<path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/>'
+    "</svg>"
+)
+
+
+def phone_link(extra_class=""):
+    cls = "phone-link" + (f" {extra_class}" if extra_class else "")
+    return f'<a class="{cls}" href="tel:{TEL}">{PHONE_ICON}<strong>{PHONE}</strong></a>'
+
+
 def canonical(path):
     if path in ("", "index.html"):
         return SITE + "/index.html"
@@ -524,63 +537,91 @@ def home():
     )
 
 
+def service_gallery(s):
+    """Primary service image plus one other service image."""
+    order = [h for h, _ in s["related"]] + [o["file"] for o in SERVICES_DATA]
+    by_file = {o["file"]: o for o in SERVICES_DATA}
+    shots = [s]
+    for f in order:
+        o = by_file.get(f)
+        if o and o["file"] != s["file"] and o["image"] != s["image"]:
+            shots.append(o)
+            break
+    figs = "".join(
+        f'<figure class="service-shot"><img src="{o["image"]}" alt="{o["alt"]}" width="925" height="615" loading="lazy" decoding="async"></figure>'
+        for o in shots
+    )
+    return f'<div class="service-gallery">{figs}</div>'
+
+
+def service_related(s):
+    links = list(s["related"])
+    seen = {h for h, _ in links} | {s["file"]}
+    for h, l in FOOTER_SERVICES:
+        if len(links) >= 4:
+            break
+        if h not in seen:
+            links.append((h, l))
+            seen.add(h)
+    return "".join(f'<li><a href="{h}">{l}</a></li>' for h, l in links[:4])
+
+
 def service_layout(s):
     filename = s["file"]
     desc = s["description"]
     faqs = s["faqs"]
-    body = f'''<section class="page-hero">
+    towns = "".join(f'<li><a href="{h}">{n}</a></li>' for h, n in LOCATIONS)
+    body = f'''<div class="crumb-bar"><div class="container">{crumbs([("services.html", "Services"), (filename, s["crumb"])])}</div></div>
+<section class="page-hero service-hero">
   <div class="container">
-    {crumbs([("services.html", "Services"), (filename, s["crumb"])])}
-    <h1>{s["h1"]}</h1>
-    <p class="lede">{s["intro"]}</p>
-    <div class="hero-actions">
-      {call_btn("btn btn-primary btn-lg")}
-      <a class="btn btn-ghost btn-lg" href="contact.html#quote">Get a free quote</a>
+    <div class="service-hero-inner">
+      <p class="eyebrow">{s["crumb"]}</p>
+      <h1>{s["h1"]}</h1>
+      <p class="lede">{s["intro"]}</p>
+      <div class="hero-actions">
+        {call_btn("btn btn-primary btn-lg")}
+        <a class="btn btn-ghost btn-lg" href="contact.html#quote">Get a free quote</a>
+      </div>
     </div>
   </div>
 </section>
-<section class="section">
-  <div class="container split">
-    <div class="split-media"><img src="{s["image"]}" alt="{s["alt"]}" width="925" height="615"></div>
-    <div class="prose">
-      <h2>When this fence is the right job</h2>
-      <p>{s["when"]}</p>
+<section class="section service-body">
+  <div class="container service-layout">
+    <div class="service-main">
+      {service_gallery(s)}
+      <div class="prose service-copy">
+        <h2>When this fence is the right job</h2>
+        <p>{s["when"]}</p>
+        <h2>How the work goes</h2>
+        {steps(s["process"])}
+        {s["after"]}
+        <h2>What changes the estimate</h2>
+        <p>We price the line on your lot. These are the pieces that move the number.</p>
+        {factors(s["factors"])}
+        <h2>Questions about {s["faq_label"]}</h2>
+        {faq_cards(faqs)}
+      </div>
     </div>
+    <aside class="service-aside" aria-label="Estimate and related services">
+      <div class="side-card">
+        <p class="side-kicker">Talk through the line</p>
+        <p>Call or send the town, the approximate length, and the gate count. We will tell you if the job is a repair, a replacement, or a different material than you started with.</p>
+        <p class="side-phone">{phone_link("phone-link-lg")}</p>
+        <p class="side-hours">{OFFICE_HOURS}</p>
+        <p><a class="btn btn-primary" href="contact.html#quote">Get a free quote</a></p>
+      </div>
+      <div class="side-card side-card-muted">
+        <p class="side-kicker">Related</p>
+        <ul class="side-links">{service_related(s)}</ul>
+      </div>
+    </aside>
   </div>
 </section>
-<section class="section soft">
-  <div class="container prose">
-    <h2>How the work goes</h2>
-    {steps(s["process"])}
-    <div style="margin-top:1.2rem">{s["after"]}</div>
-  </div>
-</section>
-<section class="section">
+<section class="section section-towns">
   <div class="container">
-    <div class="section-head">
-      <h2>What changes the estimate</h2>
-      <p>We price the line on your lot. These are the pieces that move the number.</p>
-    </div>
-    {factors(s["factors"])}
-  </div>
-</section>
-<section class="section soft">
-  <div class="container">
-    <h2>Questions about {s["faq_label"]}</h2>
-    <div style="margin-top:1.2rem">{faq_cards(faqs)}</div>
-    {related(s["related"])}
-  </div>
-</section>
-<section class="cta-band">
-  <div class="container cta-inner">
-    <div>
-      <h2>Get an estimate for this fence</h2>
-      <p>Call {PHONE} or send the town, the approximate length, and the gate count.</p>
-    </div>
-    <div class="cta-actions">
-      <a class="btn btn-primary btn-lg" href="contact.html#quote">Get a free quote</a>
-      {call_btn("btn btn-ink btn-lg")}
-    </div>
+    <h2>Towns we serve</h2>
+    <ul class="chips light-chips">{towns}</ul>
+    <p class="towns-links"><a href="service-areas.html">Service areas</a> · <a href="contact.html#quote">Request an estimate</a> · <a href="services.html">All services</a></p>
   </div>
 </section>'''
     graph = [
