@@ -634,7 +634,7 @@ def home():
   <div class="container faq-wrap">
     <div class="section-head">
       <p class="kicker">FAQ</p>
-      <h2>Frequently Asked Questions</h2>
+      <h2>FAQ</h2>
       <p>Straight answers on estimates, materials, timelines, and upkeep.</p>
       <p><a href="faq.html">More fence questions</a></p>
     </div>
