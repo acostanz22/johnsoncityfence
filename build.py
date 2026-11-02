@@ -44,6 +44,49 @@ LOCATIONS = [
     ("fence-company-washington-county-tn.html", "Washington County"),
 ]
 
+# Header introductions: every page opens with the business name and runs 5-6 sentences.
+INTROS = {
+    "index.html": "Johnson's Fence Company installs and repairs wood, vinyl, aluminum, chain-link, and farm fencing for homes, farms, and commercial lots in Johnson City, TN. Our work covers Johnson City and nearby Washington County towns such as Jonesborough, Gray, and Telford. Every estimate starts with a look at the property, because valley clay, ridge rock, slopes, and gate openings change how a fence is built. You get a straight answer on whether a job is a repair or a rebuild, and on which material suits the way you will use the fence. Estimates are free, and there is no public storefront to visit. Use the quote form here or call (423) 468-2697 to request your free fence quote.",
+    "services.html": "Johnson's Fence Company installs nine kinds of fence in Johnson City and nearby Washington County, plus gates and repairs. Wood and vinyl handle privacy and picket work, while aluminum and ornamental metal suit front yards, pools, and wide gates. Chain link covers yards, dog runs, and work lots, and commercial fencing adds heavier framing and vehicle gates. Farm fencing handles rail and wire for animals on acreage in places like Telford and Limestone. Each service page explains the process, what changes the estimate, and the questions owners ask most. Call (423) 468-2697 or send the quote form to talk through your job.",
+    "wood-fence.html": "Johnson's Fence Company installs wood privacy, shadowbox, and board-on-board fences for yards in Johnson City and nearby Washington County. Wood is the right fit when you want a solid backyard screen or a fence you can stain to match the house. We measure the line, set posts in concrete for valley clay, and price each gate as its own piece. Inside Johnson City, published standards allow a standard residential fence up to 7 feet without a structural permit, and corner sight triangles stay at 3 feet. If the posts on an older wood line are still sound, we can repair the failed section instead of rebuilding it. Send the quote form or call (423) 468-2697 for a free estimate.",
+    "vinyl-fence.html": "Johnson's Fence Company installs vinyl privacy, picket, and ranch-rail fences for homeowners in Johnson City and nearby Washington County. Vinyl suits a yard where you want a straight, clean line without a yearly stain schedule. We match the style, color, and height to your lot and to any written HOA rule before panels are ordered. Sloped yards are laid out with racked or stepped panels, and every vinyl line gets its own posts set in concrete. Gates are hung so the latch meets the strike and the leaf does not drag. Use the quote form or call (423) 468-2697 to request a free estimate.",
+    "aluminum-fence.html": "Johnson's Fence Company installs open aluminum picket fences and gates for front yards, pools, and sloped lines in Johnson City and Washington County. Aluminum keeps the yard visible while still marking your property. It does not rust and does not need a paint cycle, which suits humid East Tennessee summers. We choose the height around front-yard sight lines and any pool-barrier rule, then match the finish to the house or the HOA sheet. Panels rack to follow a mild slope, and steeper drops can be stepped. Send the quote form or call (423) 468-2697 for a free estimate.",
+    "chain-link-fence.html": "Johnson's Fence Company installs galvanized and vinyl-coated chain-link fences for yards, dog runs, and light commercial lots in Johnson City and Washington County. Chain link is the practical choice when you need containment more than a solid screen. Terminal posts, line posts, and rail are set first so the fabric can be stretched tight and tied off. Gates hang on posts sized for the opening, whether that is a walk gate for a dog yard or a double drive gate. A slat or privacy screen can be added where a visual break matters. Call (423) 468-2697 or send the quote form for a free estimate.",
+    "metal-fence.html": "Johnson's Fence Company installs ornamental steel fences and gates for lines that need more strength than aluminum in Johnson City and Washington County. Steel suits wide drive gates, heavier decorative runs, and lines that take more abuse than a light picket. Steel in this climate needs a coating that stays intact, so we explain the finish and upkeep before you order. If you want an open fence with almost no finish work, we will point you to aluminum instead. Posts are set in concrete, and gates are hung on posts sized for the leaf. Send the quote form or call (423) 468-2697 for a free estimate.",
+    "picket-fence.html": "Johnson's Fence Company installs wood and vinyl picket fences for front yards and gardens in Johnson City and nearby Washington County. A picket fence marks the boundary without turning the yard into a walled room. Heights stay low enough to keep the street view clear. On a corner lot in the city, the sight triangle cannot exceed 3 feet, which is why a short picket often fits the frontage best. A picket line is a weak privacy fence and a weak dog fence for an animal that can jump, and we say so up front. Use the quote form or call (423) 468-2697 to request a free estimate.",
+    "privacy-fence.html": "Johnson's Fence Company installs solid wood and vinyl privacy fences for backyards in Johnson City and nearby Washington County. A privacy fence closes off a patio, a pool deck, or a rear yard from the next house. Wood gives you a stainable screen, and vinyl gives you the same screen without a stain cycle. Exposed lots on a ridge catch more wind, so post spacing is matched to a solid wall rather than an open picket. On a corner lot, the tall solid section stops before the sight triangle. Call (423) 468-2697 or send the quote form for a free estimate.",
+    "farm-fence.html": "Johnson's Fence Company installs rail and woven-wire farm fencing for horses, cattle, and property lines on acreage near Johnson City. Jobs around Telford, Limestone, and rural Washington County are usually long runs, so corners, bracing, and gate placement are planned before any wire goes up. Horses need a fence they can see, such as rail, while cattle can be held with woven wire and sometimes a strand of electric. We do not put horses on barbed wire. A house-yard fence and a field fence can be quoted as two separate jobs. Send the quote form or call (423) 468-2697 for a free estimate.",
+    "commercial-fencing.html": "Johnson's Fence Company installs commercial chain-link fencing, ornamental rail, and vehicle gates for lots and job sites in Johnson City and nearby Washington County. A storage yard, shop, or contractor site gets a heavier spec than a backyard panel kit. Fabric gauge, post size, and the vehicle gate are the parts that change with the use of the lot. Gate openings are measured for the trucks and equipment that actually pass through them. If a property manager or contractor has a written spec, send it along with your request. Call (423) 468-2697 or use the quote form to start a free estimate.",
+    "gate-installation.html": "Johnson's Fence Company installs walk gates and drive gates for fences in Johnson City and nearby Washington County. A 3-foot walk gate, a 4-foot mower gate, and a double drive gate put different loads on the posts. We size the posts and hardware for the leaf, so the gate latches without dragging. We can add an opening to an existing fence when the posts can carry the leaf. If a gate sags because the posts have rotted or heaved, the repair includes new posts rather than a bigger hinge. Send the quote form or call (423) 468-2697 for a free estimate.",
+    "fence-repair.html": "Johnson's Fence Company repairs fences and gates in Johnson City and nearby Washington County. If the posts are still sound, we replace the boards, rails, mesh, or gate that failed and leave the rest of the line. If the posts have rotted at the ground line or heaved out of wet clay, we will tell you that stretch should be rebuilt. Nailing new boards to failing posts only delays the next lean. Photos of the damage help us plan the visit. Call (423) 468-2697 or send the quote form to request a free estimate.",
+    "faq.html": "Johnson's Fence Company answers the fence questions Johnson City and Washington County owners ask most often. You will find notes on cost, permits, clay and rock, materials, and repairs. Answers are based on how we price and build fences on local lots, not on a national average. City of Johnson City rules differ from those in other towns and unincorporated county land, and we point out which one applies. If your lot does not match any answer here, describe it to us. Call (423) 468-2697 or send the quote form for a free estimate.",
+    "about.html": "Johnson's Fence Company is a local fence crew serving homes, farms, and commercial lots in Johnson City and nearby Washington County. We install and repair wood, vinyl, aluminum, chain-link, metal, and farm fences, along with gates. Each estimate comes from a look at the line rather than from a national form. We work as a service-area business with no public storefront, so you call and we come to the property. If the posts on an old line are sound we repair, and if they have failed we say so. Call (423) 468-2697 or send the quote form to start a free estimate.",
+    "contact.html": "Johnson's Fence Company offers free fence estimates for properties in Johnson City and nearby Washington County. Tell us the town, the fence type if you know it, and about how much line you need. Mention whether an old fence has to come out and whether the gate must fit a mower or a truck. If an HOA has a written fence rule, include it so we order the right height and color. We are a service-area company with no public storefront, so we come to you. Fill out the quote form or call (423) 468-2697 and we will take it from there.",
+    "service-areas.html": "Johnson's Fence Company installs and repairs fences within about 25 miles of Johnson City. That includes Jonesborough, Elizabethton, Gray, Boones Creek, Piney Flats, Telford, Limestone, Unicoi, and the rest of Washington County. Each place puts different demands on a fence, from wet river bottoms to rocky hillsides and longer farm lines. Choose your town below for notes on materials, ground, and local rules that affect your lot. If your address is near the edge of this area, call and ask. Send the quote form or call (423) 468-2697 for a free estimate.",
+    "privacy.html": "Johnson's Fence Company collects only the details you send when you ask for a fence estimate. The quote form on this site is provided by Tally, and we receive your name, phone number, email, and job notes. We use that information to reply, to plan a look at your property, and to prepare your estimate. We do not sell the contents of the form. Calls to (423) 468-2697 are answered for the same purpose. To have your request deleted, call and tell us, and please do not send payment card numbers through the form.",
+    "fence-company-jonesborough-tn.html": "Johnson's Fence Company installs fences for Jonesborough homes and for the county ground just outside town. In-town lots are often narrow, with short side yards and older trees on the line, so gate widths and post layouts have to be exact. Jonesborough has its own town rules, and some frontages sit in a local historic district where a fence can need design approval first. We confirm the local requirement for your street before ordering a height or material. Outside town, house-yard wood or vinyl and a field fence on the rest of the parcel are quoted as two separate lines. Call (423) 468-2697 or use the quote form for a free Jonesborough estimate.",
+    "fence-company-elizabethton-tn.html": "Johnson's Fence Company installs fences for Elizabethton lots in Carter County, from wet river-bottom yards to rocky hillsides. Low yards near the Watauga and Doe rivers can hold water after a hard rain, and we do not set posts in a saturated hole. Hillside streets bring shallow soil over rock and a grade that has to be stepped instead of racked flat. Elizabethton is not in Washington County, so we confirm height and permit questions with the office that governs your lot. Privacy wood, aluminum, and repairs are the most common requests. Call (423) 468-2697 or use the quote form for a free Elizabethton estimate.",
+    "fence-company-gray-tn.html": "Johnson's Fence Company builds fences for Gray subdivisions and house lots along US-11E in Washington County. Many neighborhoods here write down fence height, color, and which side faces the neighbor, so we ask for the HOA sheet before ordering white vinyl, stained wood, or black aluminum. Lots are house-sized, which makes wood, vinyl, and aluminum the usual materials, with chain link only where the covenants allow it. Posts go in concrete for valley clay, and irrigation lines on newer yards are flagged before we dig. Gray is not automatically inside the City of Johnson City limits, so a city permit answer does not transfer by default. Call (423) 468-2697 or send the quote form for a free Gray estimate.",
+    "fence-company-boones-creek-tn.html": "Johnson's Fence Company installs fences in Boones Creek, from established yards northwest of Johnson City to sloped lots that drop toward Boone Lake. On a lake lot, shoreline setbacks, shared access, and the grade down to the water decide where the fence can stop. Neighborhoods away from the water look more like a normal house lot, with side and rear privacy and a gate for the mower. Older yards often have trees and fences that only need a repair, not a full replacement. Some Boones Creek parcels fall in the city\u2019s planning region and others are county ground, so we check the parcel instead of assuming. Call (423) 468-2697 or use the quote form for a free Boones Creek estimate.",
+    "fence-company-piney-flats-tn.html": "Johnson's Fence Company installs commercial fencing and vehicle gates in Piney Flats, where I-26 meets US-11E in Sullivan County. Shop lots and small warehouse yards need a heavier chain-link spec, posts sized for a drive gate, and a layout that matches where trucks turn. Residential fabric and a light walk gate will not do that job. Houses near the corridor are quoted separately as house fences. Piney Flats is in Sullivan County, so we do not apply the Johnson City residential height note to a site there. Call (423) 468-2697 or use the quote form for a free Piney Flats estimate.",
+    "fence-company-telford-tn.html": "Johnson's Fence Company builds pasture and farm fencing in Telford, a rural part of Washington County. Most jobs are long lines of rail or woven wire with braced corners and a gate a truck can use. Horses get a fence they can see, and cattle can be held with woven wire. Low draws stay soft after rain, so brace posts go where the hole will hold. A house yard, if you want one, is wood, vinyl, or chain link and is quoted on its own. Call (423) 468-2697 or use the quote form for a free Telford estimate.",
+    "fence-company-limestone-tn.html": "Johnson's Fence Company installs property-line wire, paddock fencing, and pasture fence in Limestone, in agricultural Washington County. Bottom ground near the Nolichucky can flood, so we look at whether a line should sit off the lowest ground. Posts in a floodplain can loosen after high water even when they were set in concrete, and we replace them instead of tightening them. Cattle wire and horse rail are the usual products, each with proper bracing and a farm gate. A vinyl or wood privacy fence around a house is available as a separate quote. Call (423) 468-2697 or use the quote form for a free Limestone estimate.",
+    "fence-company-unicoi-tn.html": "Johnson's Fence Company installs fences for Unicoi lots in the foothills south of Johnson City. Digging here often hits rock, and a hole that stops on stone changes both the layout and the labor. Yards slope, so panels are stepped on steeper drops instead of being pulled flat down the hill. Solid privacy panels on an exposed ridge take more wind, so post spacing is set for a wall rather than an open picket. Unicoi has its own county and town rules, and we confirm the local requirement instead of using a Johnson City height. Call (423) 468-2697 or send the quote form for a free Unicoi estimate.",
+    "fence-company-washington-county-tn.html": "Johnson's Fence Company serves Washington County, the area around Johnson City where fence rules change once you leave the city limits. Inside Johnson City, published standards allow a standard residential fence up to 7 feet without a structural permit, and corner sight triangles stay at 3 feet. Outside the city, county zoning staff can say whether a parcel needs anything, and some nearby parcels are in the city\u2019s planning region even with a county address. Gray, Boones Creek, Telford, and Limestone are all in this county, and each is a different kind of job. We build to the parcel in front of us and make sure Tennessee 811 is called before any hole is dug. Call (423) 468-2697 or use the quote form for a free Washington County estimate.",
+}
+
+
+def _check_intros():
+    import re
+
+    for fn, text in INTROS.items():
+        sentences = [s for s in re.split(r"(?<=[.!?])\s+", text.strip()) if s]
+        assert text.startswith(NAME), fn
+        assert 5 <= len(sentences) <= 6, (fn, len(sentences))
+
+
+_check_intros()
+
 PHONE_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>'
 MENU_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>'
 
@@ -94,6 +137,45 @@ def faq_cards(items):
     return '<div class="faq-grid">' + "".join(blocks) + "</div>"
 
 
+def faq_accordion(items):
+    blocks = []
+    for q, a in items:
+        blocks.append(f'<details class="faq-acc"><summary>{q}</summary><p>{a}</p></details>')
+    return '<div class="faq-acc-list">' + "".join(blocks) + "</div>"
+
+
+def page_hero(filename, h1, crumb_html="", eyebrow="", cls=""):
+    """Slim interior header: crumbs, H1, 5-6 sentence intro, call button, and the quote form."""
+    eb = f'<p class="eyebrow">{eyebrow}</p>' if eyebrow else ""
+    return f'''<section class="page-hero {cls}">
+  <div class="container page-hero-grid">
+    <div class="page-hero-copy">
+      {crumb_html}{eb}
+      <h1>{h1}</h1>
+      <p class="lede">{INTROS[filename]}</p>
+      <div class="hero-actions">{call_btn("btn btn-primary btn-lg")}</div>
+    </div>
+    {tally_block()}
+  </div>
+</section>'''
+
+
+def cta_band(heading, text=None):
+    text = text or f"Call {PHONE} or send the lot details. Estimates are free."
+    return f'''<section class="cta-band">
+  <div class="container cta-inner">
+    <div>
+      <h2>{heading}</h2>
+      <p>{text}</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-primary btn-lg" href="#quote">Request a free quote</a>
+      {call_btn("btn btn-ink btn-lg")}
+    </div>
+  </div>
+</section>'''
+
+
 def header(current):
     def link(href, label):
         cur = ' aria-current="page"' if href == current else ""
@@ -103,7 +185,8 @@ def header(current):
     loc_links = link("service-areas.html", "All service areas") + "".join(
         link(h, l) for h, l in LOCATIONS
     )
-    quote_href = "#quote" if current == "index.html" else "contact.html#quote"
+    # Every page carries the quote form in its header, so the button always jumps to it.
+    quote_href = "#quote"
     return f'''<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="topbar">
@@ -153,7 +236,7 @@ def footer():
   <div class="container footer-grid">
     <div>
       <h2>Company</h2>
-      <img src="logo.svg" alt="" width="280" height="56">
+      <a class="footer-logo" href="index.html" aria-label="{NAME} home"><img src="logo.svg" alt="{NAME}" width="280" height="56"></a>
       <p style="margin-top:0.9rem">Fence installation and repair for homes, farms, and commercial lots in Johnson City, Tennessee and nearby towns.</p>
       <a class="footer-phone" href="tel:{TEL}">{PHONE}</a>
       <ul style="margin-top:0.8rem">
@@ -188,7 +271,7 @@ def footer():
 </footer>
 <nav class="callbar" aria-label="Call or request a quote">
   <a class="btn btn-ink" href="tel:{TEL}">{PHONE_SVG}Call</a>
-  <a class="btn btn-primary" href="contact.html#quote">Free quote</a>
+  <a class="btn btn-primary" href="#quote">Free quote</a>
 </nav>'''
 
 
@@ -198,6 +281,7 @@ TALLY_SCRIPT = '''<script>var d=document,w="https://tally.so/widgets/embed.js",v
 def layout(filename, title, description, body, graph, og_image="/images/hero.jpg"):
     url = canonical(filename)
     schema = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
+    title = title.replace("&", "&amp;")
     html = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -382,7 +466,19 @@ def related(links):
 HOME_FAQS = [
     (
         "How much does a fence cost in Johnson City, TN?",
-        "The price follows the line we measure: length, height, material, gates, and whether an old fence has to come out. Clay that holds water, a slope, tree roots, and rock on a ridge lot all change the labor. We do not publish a per-foot menu. The estimate comes from the property.",
+        "The price follows the line we measure: length, height, material, gates, and whether an old fence has to come out. Clay that holds water, a slope, tree roots, and rock on a ridge lot all change the labor. We do not publish a per-foot menu. The estimate comes from the property, and it is free.",
+    ),
+    (
+        "How does the estimate work?",
+        "Send the quote form or call with the town, the fence type if you know it, and about how much line you need. We look at the property, talk through the job, and give you a number for that line. Photos and any written HOA rule help us get it right the first time.",
+    ),
+    (
+        "How long does a fence installation take?",
+        "It depends on the length, the material, the number of gates, and the weather. A short backyard line is a smaller job than a long pasture run. Material lead time and any HOA approval can also move the start date. We give you a realistic schedule with the estimate instead of promising a fixed number of days.",
+    ),
+    (
+        "How much maintenance does each fence need?",
+        "Wood needs a stain or sealer on a regular schedule to hold up in humid summers and freeze-thaw winters. Vinyl needs an occasional wash. Aluminum needs very little because it does not rust or need paint. Chain link needs little beyond checking gates and ties, and ornamental steel needs its coating kept intact.",
     ),
     (
         "Can you set fence posts in the clay and rock around Johnson City?",
@@ -414,8 +510,6 @@ def home():
         ("privacy-fence.html", "images/vinyl-privacy.jpg", "White vinyl fence with a solid privacy panel and a semi-private section", "Privacy fencing", "Solid wood or vinyl panels that close a backyard off from the next house. Built for side and rear yards, not a corner sight line."),
         ("farm-fence.html", "images/farm.jpg", "White rail fence running through a green pasture", "Farm fencing", "Rail and woven wire for horses and cattle on longer pasture runs. Built for Washington County acreage, not a backyard panel."),
         ("commercial-fencing.html", "images/commercial.jpg", "Black metal rail fence along a maintained lawn", "Commercial fencing", "Heavier chain link, rail, and vehicle gates for yards and job sites. Specified for a work lot, not a house privacy panel."),
-        ("gate-installation.html", "images/gate.jpg", "Double driveway gate between masonry posts", "Gate installation", "Walk gates and drive gates hung on posts sized for the opening. New installs, plus repairs when a gate sags or will not latch."),
-        ("fence-repair.html", "images/repair.jpg", "A carpenter resetting boards on a wood fence gate", "Fence repair", "Boards, posts, and gates replaced where the rest of the line is still sound. If the posts have failed, we say that before we patch them."),
     ]
     card_html = []
     for href, img, alt, title, text in cards:
@@ -431,74 +525,94 @@ def home():
         ("images/aluminum.jpg", "Black aluminum picket fence"),
         ("images/farm.jpg", "White rail fence in a pasture"),
     ]
-    ghtml = "".join(f'<figure><img src="{src}" alt="{alt}" loading="lazy"></figure>' for src, alt in gallery)
-    chips = "".join(f'<li><a href="{h}">{n}</a></li>' for h, n in LOCATIONS)
+    ghtml = "".join(
+        f'<figure><img src="{src}" alt="{alt}" width="925" height="615" loading="lazy"></figure>' for src, alt in gallery
+    )
+    why = [
+        ("Built for local ground", "Valley clay, ridge rock, and sloped lots change how posts are set and which material lasts. We plan for the lot in front of us."),
+        ("Plain communication", "You hear whether a job is a repair or a rebuild, what drives the number, and what we need from you. No jargon, and no guessing at rules."),
+        ("The right material for the job", "A privacy yard, a front picket, a dog run, and a pasture line are different fences. We match the material to how you will use it."),
+        ("Careful workmanship", "Posts set in concrete, gates hung so they latch without dragging, and lines checked before we leave."),
+    ]
+    why_html = "".join(f'<article class="factor"><h3>{t}</h3><p>{p}</p></article>' for t, p in why)
+    process = [
+        ("Request a quote.", "Send the quote form or call with the town, the fence type, and about how much line you need."),
+        ("Discuss the project.", "We talk through the job and walk the property to check the ground, gates, slope, and any HOA or city rule."),
+        ("Receive your estimate.", "You get a free estimate for that line, including what could change it."),
+        ("Schedule installation.", "Once you approve, we set a start date, build the fence, and walk the finished line with you."),
+    ]
+    process_html = "".join(
+        f'<li><span class="num">{i}</span><span><strong>{t}</strong> {p}</span></li>'
+        for i, (t, p) in enumerate(process, start=1)
+    )
+    chips = '<li><a href="service-areas.html">Johnson City</a></li>' + "".join(
+        f'<li><a href="{h}">{n}</a></li>' for h, n in LOCATIONS
+    )
     desc = "Johnson's Fence Company installs and repairs wood, vinyl, aluminum, chain-link, and farm fencing in Johnson City, TN. Call (423) 468-2697."
+    home_title = "Fence Company Johnson City TN | Vinyl Fence, Wood Fence, Aluminum Fence & More"
     body = f'''<section class="hero">
   <div class="hero-media"><img src="images/hero.jpg" alt="Wood privacy fence along a backyard lawn beside a house" width="1200" height="800" fetchpriority="high"></div>
   <div class="hero-shade"></div>
   <div class="container hero-grid">
     <div>
-      <p class="eyebrow">Johnson City, Tennessee</p>
-      <h1>Fence company in Johnson City, TN</h1>
-      <p class="lede">Wood, vinyl, aluminum, chain link, and farm fencing for houses, pastures, and commercial lots. New lines, replacements, repairs, and gates are quoted from the property.</p>
+      <h1>Fence Company Johnson City TN</h1>
+      <p class="lede">{INTROS["index.html"]}</p>
       <div class="hero-actions">
         {call_btn("btn btn-primary btn-lg")}
-        <a class="btn btn-ghost btn-lg" href="#quote">Request an estimate</a>
       </div>
-      <ul class="hero-points">
-        <li>Homes, farms, and work lots</li>
-        <li>Posts set for valley clay and ridge rock</li>
-        <li>Free on-site estimates</li>
-      </ul>
     </div>
     {tally_block()}
   </div>
 </section>
-<section class="section">
+<section class="section bg-paper" id="why-choose-us">
+  <div class="container">
+    <div class="section-head">
+      <p class="kicker">Why choose us</p>
+      <h2>Why Choose Johnson's Fence Company</h2>
+      <p>A fence is a long-term purchase on your property. These are the habits we bring to every Johnson City and Washington County job.</p>
+    </div>
+    <div class="factor-grid why-grid">{why_html}</div>
+  </div>
+</section>
+<section class="section bg-sand" id="services">
   <div class="container">
     <div class="section-head">
       <p class="kicker">Materials and work</p>
-      <h2>Fence services in Johnson City</h2>
+      <h2>Our Fence Services</h2>
       <p>Start with the job. A backyard screen, a front-yard picket, a dog run, and a pasture line are not the same fence.</p>
     </div>
     <div class="card-grid services">{"".join(card_html)}</div>
+    <p class="services-more">Also available: <a href="gate-installation.html">gate installation</a> and <a href="fence-repair.html">fence repair</a>. See <a href="services.html">all services</a>.</p>
   </div>
 </section>
-<section class="band">
-  <div class="container section">
+<section class="section band" id="gallery">
+  <div class="container">
     <div class="section-head">
-      <p class="kicker">Styles</p>
-      <h2>Fences we install</h2>
-      <p>Privacy, picket, chain link, aluminum, and rail from the crew that walks the line in Johnson City and nearby towns.</p>
+      <p class="kicker">Gallery</p>
+      <h2>Our Gallery</h2>
+      <p>Fence styles we install in Johnson City and Washington County. These photos illustrate each style and are not a record of completed customer projects.</p>
     </div>
     <div class="gallery">{ghtml}</div>
   </div>
 </section>
-<section class="section soft">
-  <div class="container split-2">
-    <div>
-      <h2>Houses</h2>
-      <p>Backyard privacy, pet runs, pool barriers, and property-line replacements. Most in-town jobs are a wood or vinyl screen on the side and rear, with a gate that fits the mower. Corner lots keep the sight triangle low so drivers can see past the fence.</p>
-      <a class="more" href="privacy-fence.html">Privacy fencing</a>
+<section class="section bg-paper" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <p class="kicker">Reviews</p>
+      <h2>Customer Reviews</h2>
     </div>
-    <div>
-      <h2>Lots and acreage</h2>
-      <p>A storage yard in Piney Flats needs heavier chain link and a vehicle gate. A pasture in Telford or Limestone needs rail or wire sized for the animals, not a backyard panel. Tell us how the ground is used and we will spec the line for that use.</p>
-      <a class="more" href="farm-fence.html">Farm fencing</a>
+    <div class="reviews-empty">
+      <p>We have not posted customer reviews on this site yet, and we will not invent any. When verified reviews from real customers are available, they will appear here with the reviewer&rsquo;s own words.</p>
+      <p>Want to talk to us first? Call <a href="tel:{TEL}">{PHONE}</a> or send the quote form and ask any question about your fence.</p>
     </div>
   </div>
 </section>
-<section class="section">
+<section class="section bg-sand" id="process">
   <div class="container split-2">
     <div>
-      <h2>How a fence job is quoted</h2>
-      <ol class="steps">
-        <li><span class="num">1</span><span><strong>Name the job.</strong> Screen, contain animals, mark a line, or secure a lot. That choice picks the material faster than a photo.</span></li>
-        <li><span class="num">2</span><span><strong>Walk the ground.</strong> Clay, rock, slope, trees, and the distance from the driveway all change the posts and the labor.</span></li>
-        <li><span class="num">3</span><span><strong>Count the openings.</strong> A fence with the wrong gate is a daily problem. Walk gates and drive gates are priced as their own pieces.</span></li>
-        <li><span class="num">4</span><span><strong>Repair or replace.</strong> Sound posts can take new boards. Posts that have rotted at the ground line cannot. We say which one you have.</span></li>
-      </ol>
+      <p class="kicker">How it works</p>
+      <h2>Our Process</h2>
+      <ol class="steps">{process_html}</ol>
     </div>
     <div class="panel">
       <h2>Repairs and gates</h2>
@@ -508,46 +622,33 @@ def home():
     </div>
   </div>
 </section>
-<section class="band">
-  <div class="container section">
-    <h2>Service area</h2>
+<section class="section band-pine" id="areas">
+  <div class="container">
+    <h2>Areas We Serve</h2>
     <p>We work in Johnson City and nearby communities, roughly a 25-mile drive. Each place puts a different demand on the fence: tight in-town lots, HOA subdivisions, wet river bottoms, and longer farm lines.</p>
     <ul class="chips">{chips}</ul>
-    <p style="margin-top:1rem"><a href="service-areas.html" style="color:white">All service areas</a></p>
+    <p style="margin-top:1rem"><a href="service-areas.html" class="band-link">See all service areas</a></p>
   </div>
 </section>
-<section class="section">
-  <div class="container">
-    <h2>Questions before you call</h2>
-    <div style="margin-top:1.2rem">{faq_cards(HOME_FAQS)}</div>
-    <p style="margin-top:1rem"><a href="faq.html">More fence questions</a></p>
+<section class="section bg-paper" id="faq">
+  <div class="container faq-wrap">
+    <div class="section-head">
+      <p class="kicker">FAQ</p>
+      <h2>Frequently Asked Questions</h2>
+      <p>Straight answers on estimates, materials, timelines, and upkeep.</p>
+      <p><a href="faq.html">More fence questions</a></p>
+    </div>
+    {faq_accordion(HOME_FAQS)}
   </div>
 </section>
-<section class="cta-band">
-  <div class="container cta-inner">
-    <div>
-      <h2>Ready to walk the line?</h2>
-      <p>Call {PHONE} or send the lot details. Estimates are free.</p>
-    </div>
-    <div class="cta-actions">
-      <a class="btn btn-primary btn-lg" href="#quote">Get a free quote</a>
-      {call_btn("btn btn-ink btn-lg")}
-    </div>
-  </div>
-</section>'''
+{cta_band("Request a Free Quote", f"Call {PHONE} or send the lot details through the quote form. Estimates are free.")}'''
     graph = [
         business_node(),
         website_node(),
-        webpage("index.html", "Fence company in Johnson City, TN", desc, SITE + "/#business"),
+        webpage("index.html", "Fence Company Johnson City TN", desc, SITE + "/#business"),
         faq_schema("index.html", HOME_FAQS),
     ]
-    layout(
-        "index.html",
-        "Fence Company in Johnson City, TN | Johnson's Fence Company",
-        desc,
-        body,
-        graph,
-    )
+    layout("index.html", home_title, desc, body, graph)
 
 
 def service_gallery(s):
@@ -585,19 +686,7 @@ def service_layout(s):
     faqs = s["faqs"]
     towns = "".join(f'<li><a href="{h}">{n}</a></li>' for h, n in LOCATIONS)
     body = f'''<div class="crumb-bar"><div class="container">{crumbs([("services.html", "Services"), (filename, s["crumb"])])}</div></div>
-<section class="page-hero service-hero">
-  <div class="container">
-    <div class="service-hero-inner">
-      <p class="eyebrow">{s["crumb"]}</p>
-      <h1>{s["h1"]}</h1>
-      <p class="lede">{s["intro"]}</p>
-      <div class="hero-actions">
-        {call_btn("btn btn-primary btn-lg")}
-        <a class="btn btn-ghost btn-lg" href="contact.html#quote">Get a free quote</a>
-      </div>
-    </div>
-  </div>
-</section>
+{page_hero(filename, s["h1"], eyebrow=s["crumb"], cls="service-hero")}
 <section class="section service-body">
   <div class="container service-layout">
     <div class="service-main">
@@ -621,7 +710,7 @@ def service_layout(s):
         <p>Call or send the town, the approximate length, and the gate count. We will tell you if the job is a repair, a replacement, or a different material than you started with.</p>
         <p class="side-phone">{phone_link("phone-link-lg")}</p>
         <p class="side-hours">{OFFICE_HOURS}</p>
-        <p><a class="btn btn-primary" href="contact.html#quote">Get a free quote</a></p>
+        <p><a class="btn btn-primary" href="#quote">Get a free quote</a></p>
       </div>
       <div class="side-card side-card-muted">
         <p class="side-kicker">Related</p>
@@ -630,11 +719,11 @@ def service_layout(s):
     </aside>
   </div>
 </section>
-<section class="section section-towns">
+<section class="section section-towns bg-sand">
   <div class="container">
     <h2>Towns we serve</h2>
     <ul class="chips light-chips">{towns}</ul>
-    <p class="towns-links"><a href="service-areas.html">Service areas</a> · <a href="contact.html#quote">Request an estimate</a> · <a href="services.html">All services</a></p>
+    <p class="towns-links"><a href="service-areas.html">Service areas</a> · <a href="#quote">Request an estimate</a> · <a href="services.html">All services</a></p>
   </div>
 </section>'''
     graph = [
@@ -1029,19 +1118,13 @@ def services_page():
         cards.append(f'''<a class="service-card" href="{href}">
         <span class="body"><h3>{label}</h3><p>{blurbs[href]}</p><span class="more">View service</span></span>
       </a>''')
-    body = f'''<section class="page-hero">
-  <div class="container">
-    {crumbs([("services.html", "Services")])}
-    <h1>Fence services in Johnson City, TN</h1>
-    <p class="lede">Each fence below is a different job. Pick the one that matches the yard, the animals, or the lot, then call {PHONE} or send the details.</p>
-    <div class="hero-actions">{call_btn("btn btn-primary btn-lg")} <a class="btn btn-ghost btn-lg" href="contact.html#quote">Get a free quote</a></div>
-  </div>
-</section>
-<section class="section">
+    body = f'''{page_hero("services.html", "Fence services in Johnson City, TN", crumb_html=crumbs([("services.html", "Services")]))}
+<section class="section bg-paper">
   <div class="container">
     <div class="card-grid services">{"".join(cards)}</div>
   </div>
-</section>'''
+</section>
+{cta_band("Not sure which fence fits?", f"Call {PHONE} or send the lot details. We will tell you which material suits the job.")}'''
     graph = [
         business_node(),
         webpage("services.html", "Fence services in Johnson City, TN", desc, SITE + "/#business"),
@@ -1053,8 +1136,11 @@ def services_page():
 FAQ_ITEMS = [
     (
         "How much does a fence cost in Johnson City, TN?",
-        "The price follows the line we measure: length, height, material, gates, and whether an old fence has to come out. Clay that holds water, a slope, tree roots, and rock on a ridge lot all change the labor. We do not publish a per-foot menu. The estimate comes from the property.",
+        "The price follows the line we measure: length, height, material, gates, and whether an old fence has to come out. Clay that holds water, a slope, tree roots, and rock on a ridge lot all change the labor. We do not publish a per-foot menu. The estimate comes from the property, and it is free.",
     ),
+    HOME_FAQS[1],
+    HOME_FAQS[2],
+    HOME_FAQS[3],
     (
         "Can you set fence posts in the clay and rock around Johnson City?",
         "Yes. Valley lots in Washington County are often clay that stays wet after rain, and ridge lots toward Unicoi and Buffalo Mountain can hit rock. Posts go in concrete, with the mix crowned so water does not pool at the post. If a hole hits solid rock or a stretch stays saturated, we say so before we set it.",
@@ -1088,20 +1174,14 @@ FAQ_ITEMS = [
 
 def faq_page():
     desc = "Fence cost, clay and rock, materials, Johnson City permit rules, and repairs. Answers from Johnson's Fence Company. Call (423) 468-2697."
-    body = f'''<section class="page-hero">
-  <div class="container">
-    {crumbs([("faq.html", "FAQ")])}
-    <h1>Fence questions in Johnson City</h1>
-    <p class="lede">Straight answers about price, ground, materials, city rules, and repairs. If your lot is outside the city, say so. The rule may not be the city’s.</p>
-    <div class="hero-actions">{call_btn("btn btn-primary btn-lg")}</div>
+    body = f'''{page_hero("faq.html", "Fence questions in Johnson City", crumb_html=crumbs([("faq.html", "FAQ")]))}
+<section class="section bg-paper">
+  <div class="container faq-page-wrap">
+    {faq_accordion(FAQ_ITEMS)}
+    <p style="margin-top:1.2rem">See <a href="services.html">all services</a> or the <a href="service-areas.html">towns we serve</a>.</p>
   </div>
 </section>
-<section class="section">
-  <div class="container">
-    {faq_cards(FAQ_ITEMS)}
-    <p style="margin-top:1.2rem"><a href="contact.html#quote">Request an estimate</a> or see <a href="services.html">all services</a>.</p>
-  </div>
-</section>'''
+{cta_band("Request a Free Quote", f"Call {PHONE} or send the lot details. Estimates are free.")}'''
     graph = [
         business_node(),
         webpage("faq.html", "Fence questions in Johnson City", desc, SITE + "/#business"),
@@ -1113,15 +1193,8 @@ def faq_page():
 
 def about_page():
     desc = "Johnson's Fence Company installs and repairs fences for homes, farms, and commercial lots in Johnson City, TN. Call (423) 468-2697."
-    body = f'''<section class="page-hero">
-  <div class="container">
-    {crumbs([("about.html", "About")])}
-    <h1>About Johnson's Fence Company</h1>
-    <p class="lede">We install and repair fences in Johnson City and nearby towns. You call, we come to the property, and you get a number for that line.</p>
-    <div class="hero-actions">{call_btn("btn btn-primary btn-lg")}</div>
-  </div>
-</section>
-<section class="section">
+    body = f'''{page_hero("about.html", "About Johnson's Fence Company", crumb_html=crumbs([("about.html", "About")]))}
+<section class="section bg-paper">
   <div class="container split">
     <div class="split-media"><img src="images/hero.jpg" alt="Wood privacy fence along a backyard beside a house" width="1200" height="800"></div>
     <div class="prose">
@@ -1131,12 +1204,12 @@ def about_page():
     </div>
   </div>
 </section>
-<section class="section soft">
+<section class="section bg-sand">
   <div class="container prose">
     <h2>How we work a Johnson City lot</h2>
     <p>The valley ground is often clay that holds water. Ridges toward Unicoi and Buffalo Mountain can turn up rock. Summers are humid, and winters freeze and thaw, which is hard on a post set too shallow and on wood left bare at the ground line. Inside the city, a standard residential fence can go to 7 feet without a structural permit, and a corner sight triangle stays at 3 feet. A parcel outside the city is not automatically under that rule.</p>
     <p>If the posts on an old line are sound, we repair. If they have failed, we say so. The materials we install are the ones on the <a href="services.html">services</a> pages, matched to the job.</p>
-    <p><a href="service-areas.html">See the towns we serve</a> or <a href="contact.html">request an estimate</a>.</p>
+    <p><a href="service-areas.html">See the towns we serve</a> or <a href="#quote">request an estimate</a>.</p>
   </div>
 </section>'''
     graph = [
@@ -1149,15 +1222,8 @@ def about_page():
 
 def contact_page():
     desc = "Request a free fence estimate in Johnson City, TN. Call (423) 468-2697 or send the town, fence type, and approximate length."
-    body = f'''<section class="page-hero">
-  <div class="container">
-    {crumbs([("contact.html", "Contact")])}
-    <h1>Request a fence estimate</h1>
-    <p class="lede">Call {PHONE} or use the form. Estimates are free. We are a service-area company in Johnson City, with no public storefront listed.</p>
-    <div class="hero-actions">{call_btn("btn btn-primary btn-lg")}</div>
-  </div>
-</section>
-<section class="section">
+    body = f'''{page_hero("contact.html", "Request a fence estimate", crumb_html=crumbs([("contact.html", "Contact")]))}
+<section class="section bg-paper">
   <div class="container contact-layout">
     <div class="prose">
       <h2>What to include</h2>
@@ -1168,7 +1234,12 @@ def contact_page():
         <p class="map-caption">Service area centered on Johnson City. This map marks the city, not a storefront.</p>
       </div>
     </div>
-    {tally_block()}
+    <div class="prose">
+      <h2>Call or request a quote</h2>
+      <p>The quote form is at the top of this page. If you would rather talk it through, call {PHONE} and describe the line.</p>
+      <p>Office hours, {OFFICE_HOURS.replace(": ", ", ")}.</p>
+      <p>{call_btn("btn btn-primary btn-lg")}</p>
+    </div>
   </div>
 </section>'''
     graph = [
@@ -1360,47 +1431,29 @@ def location_pages():
         desc = loc["description"]
         svc = "".join(f'<li><a href="{h}">{label}</a></li>' for h, label in loc["services"])
         others = "".join(f'<li><a href="{h}">{n}</a></li>' for h, n in LOCATIONS if h != filename)
-        body = f'''<section class="page-hero">
-  <div class="container">
-    {crumbs([("service-areas.html", "Service areas"), (filename, loc["name"])])}
-    <h1>Fence company in {loc["name"]}, TN</h1>
-    <p class="lede">{loc["intro"]}</p>
-    <div class="hero-actions">{call_btn("btn btn-primary btn-lg")} <a class="btn btn-ghost btn-lg" href="contact.html#quote">Get a free quote</a></div>
-  </div>
-</section>
-<section class="section">
+        body = f'''{page_hero(filename, f"Fence company in {loc['name']}, TN", crumb_html=crumbs([("service-areas.html", "Service areas"), (filename, loc["name"])]))}
+<section class="section bg-paper">
   <div class="container prose">
     <h2>What fence work looks like here</h2>
     <p>{loc["detail"]}</p>
     <div style="margin-top:1.2rem">{factors(loc["points"])}</div>
   </div>
 </section>
-<section class="section soft">
+<section class="section bg-sand">
   <div class="container">
     <h2>Services that fit {loc["name"]}</h2>
     <ul class="chips light-chips" style="margin-top:1rem">{svc}</ul>
     <div style="margin-top:1.6rem">{faq_cards(loc["faqs"])}</div>
   </div>
 </section>
-<section class="section">
+<section class="section bg-paper">
   <div class="container">
     <h2>Nearby areas</h2>
     <ul class="chips light-chips">{others}</ul>
     <p style="margin-top:1rem"><a href="service-areas.html">Full service area</a></p>
   </div>
 </section>
-<section class="cta-band">
-  <div class="container cta-inner">
-    <div>
-      <h2>Estimate for a {loc["name"]} fence</h2>
-      <p>Call {PHONE} or send the lot details. Say you are in {loc["name"]} so we plan the drive.</p>
-    </div>
-    <div class="cta-actions">
-      <a class="btn btn-primary btn-lg" href="contact.html#quote">Get a free quote</a>
-      {call_btn("btn btn-ink btn-lg")}
-    </div>
-  </div>
-</section>'''
+{cta_band(f"Estimate for a {loc['name']} fence", f"Call {PHONE} or send the lot details. Say you are in {loc['name']} so we plan the drive.")}'''
         place_type = "AdministrativeArea" if loc["name"] == "Washington County" else "City"
         graph = [
             business_node(),
@@ -1424,15 +1477,8 @@ def service_areas_page():
         cards.append(f'''<a class="service-card" href="{loc["file"]}">
         <span class="body"><h3>{loc["name"]}</h3><p>{loc["intro"]}</p><span class="more">Fence notes for {loc["name"]}</span></span>
       </a>''')
-    body = f'''<section class="page-hero">
-  <div class="container">
-    {crumbs([("service-areas.html", "Service areas")])}
-    <h1>Fence service area around Johnson City</h1>
-    <p class="lede">We install and repair fences within about 25 miles of Johnson City. The places below are not copies of each other. Lot size, slope, farm lines, and which office governs the parcel all change the fence.</p>
-    <div class="hero-actions">{call_btn("btn btn-primary btn-lg")}</div>
-  </div>
-</section>
-<section class="section">
+    body = f'''{page_hero("service-areas.html", "Fence service area around Johnson City", crumb_html=crumbs([("service-areas.html", "Service areas")]))}
+<section class="section bg-paper">
   <div class="container">
     <div class="card-grid services">{"".join(cards)}</div>
     <div class="map-frame">
@@ -1451,14 +1497,8 @@ def service_areas_page():
 
 def privacy_page():
     desc = "How Johnson's Fence Company uses the information you send with a fence estimate request."
-    body = f'''<section class="page-hero">
-  <div class="container">
-    {crumbs([("privacy.html", "Privacy")])}
-    <h1>Privacy</h1>
-    <p class="lede">What we do with the details you send when you ask for a fence estimate.</p>
-  </div>
-</section>
-<section class="section">
+    body = f'''{page_hero("privacy.html", "Privacy", crumb_html=crumbs([("privacy.html", "Privacy")]))}
+<section class="section bg-paper">
   <div class="container prose">
     <p>The quote form on this site is provided by Tally. When you submit it, we receive your name, phone number, email, and whatever you wrote about the job, along with a source field that tells us the lead came from {SOURCE}.</p>
     <p>We use that information to reply about a fence estimate and to schedule a look at the property. We do not sell the form contents. Calls to {PHONE} are for the same purpose.</p>
